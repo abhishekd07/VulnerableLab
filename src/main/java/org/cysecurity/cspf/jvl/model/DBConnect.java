@@ -17,7 +17,7 @@ import java.util.Properties;
 
 /**
  *
- * @author breakthesec @test.com , abhishek@xyz.com
+ * @author breakthesec @test.com , abhishek@test.com
  */
 public class DBConnect {
     public Connection connect(String path) throws IOException,ClassNotFoundException,SQLException
