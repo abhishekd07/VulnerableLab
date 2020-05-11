@@ -19,11 +19,11 @@ node {
       }
    }
    
-stage('Run_Selenium_Test') {
+stage('Selenium Test') {
 	bat 'C:\\Checkmarx\\Installers\\CxIAST\\WebDrivers_Selenium\\Selenium.jar'
 }
 
-stage('IAST') {
+stage('CxIAST') {
 step([$class: 'CxIASTBuilder', appIp: 'localhost', appName: 'JavaVulnerableLab', appPort: 8360, password: '{AQAAABAAAAAQYtajilBHWA+LE+iE00upYpqlBLMWFj0WVeqnaMREXdI=}', scanTag: 'Build_Number:$BUILD_NUMBER', serverUrl: 'http://localhost:8380/', username: 'abhishek'])
 }
 
