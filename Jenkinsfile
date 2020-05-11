@@ -20,7 +20,7 @@ node {
    }
    
 stage(Run_Selenium_Test) {
-	step(bat label: '', script: 'C:\\Checkmarx\\Installers\\CxIAST\\WebDrivers_Selenium\\Selenium.jar')
+	bat label: 'Test', script: 'C:\\Checkmarx\\Installers\\CxIAST\\WebDrivers_Selenium\\Selenium.jar'
 }
 
 stage(IAST) {
