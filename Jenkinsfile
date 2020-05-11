@@ -4,6 +4,7 @@ node {
 
       stage('Checkout') { // for display purposes
       // Get some code from a GitHub repository
+      // Demo
       git 'https://github.com/abhishekd07/VulnerableLab.git'
       // Get the Maven tool.
       // ** NOTE: This 'M3' Maven tool must be configured
