@@ -5,7 +5,7 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  *
- * @author breakthesec
+ * @author breakthesec testaijsdoiqw
  */
 public class HashMe {
     public static String hashMe(String str) 
