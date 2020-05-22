@@ -51,7 +51,7 @@ node {
 !**/*.tar.gz,  !**/*.tar,       !**/*.gz,       !**/*.ahtm,     !**/*.ahtml,   !**/*.fhtml, !**/*.hdm,
 !**/*.hdml,    !**/*.hsql,      !**/*.ht,       !**/*.hta,      !**/*.htc,     !**/*.htd, !**/*.war, !**/*.ear,
 !**/*.htmls,   !**/*.ihtml,     !**/*.mht,      !**/*.mhtm,     !**/*.mhtml,   !**/*.ssi, !**/*.stm,
-!**/*.stml,    !**/*.ttml,      !**/*.txn,      !**/*.xhtm,     !**/*.xhtml,   !**/*.class, !**/*.iml, !Checkmarx/Reports/*.*''', fullScanCycle: 10, groupId: '1', password: '{AQAAABAAAAAQCqfCvlLaDlgfV8RBmv9c/wd/qg/JV78/jMyZPxTIG8Y=}', preset: '36', projectName: 'CxPipelineWebGoat', sastEnabled: false, serverUrl: 'http://localhost', sourceEncoding: '1', username: '', vulnerabilityThresholdResult: 'FAILURE', waitForResultsEnabled: true])
+!**/*.stml,    !**/*.ttml,      !**/*.txn,      !**/*.xhtm,     !**/*.xhtml,   !**/*.class, !**/*.iml, !Checkmarx/Reports/*.*''', fullScanCycle: 10, groupId: '1', password: '{AQAAABAAAAAQCqfCvlLaDlgfV8RBmv9c/wd/qg/JV78/jMyZPxTIG8Y=}', preset: '36', projectName: 'BlueOcean_JavaLab', sastEnabled: false, serverUrl: 'http://localhost', sourceEncoding: '1', username: '', vulnerabilityThresholdResult: 'FAILURE', waitForResultsEnabled: true])
 				}
 			}
 			failFast: false
