@@ -41,7 +41,7 @@ node {
 				}
 			}, CxOSA_Scan: {
 				stage('CxOSA') {
-				    step([$class: 'CxScanBuilder', comment: '', credentialsId: '', excludeFolders: '', excludeOpenSourceFolders: '', exclusionsSetting: 'global', failBuildOnNewResults: false, failBuildOnNewSeverity: 'HIGH', filterPattern: '''!**/_cvs/**/*, !**/.svn/**/*,   !**/.hg/**/*,   !**/.git/**/*,  !**/.bzr/**/*, !**/bin/**/*,
+				    step([$class: 'CxScanBuilder', comment: '', credentialsId: '', dependencyScanConfig: [dependencyScanExcludeFolders: '', dependencyScanPatterns: '', dependencyScannerType: 'OSA', osaArchiveIncludePatterns: '*.zip, *.war, *.ear, *.tgz', overrideGlobalConfig: true, scaAccessControlUrl: 'https://platform.checkmarx.net', scaCredentialsId: '', scaServerUrl: 'https://api.scacheckmarx.com', scaTenant: '', scaWebAppUrl: 'https://sca.scacheckmarx.com'], excludeFolders: '', exclusionsSetting: 'global', failBuildOnNewResults: false, failBuildOnNewSeverity: 'HIGH', filterPattern: '''!**/_cvs/**/*, !**/.svn/**/*,   !**/.hg/**/*,   !**/.git/**/*,  !**/.bzr/**/*, !**/bin/**/*,
 !**/obj/**/*,  !**/backup/**/*, !**/.idea/**/*, !**/*.DS_Store, !**/*.ipr,     !**/*.iws,
 !**/*.bak,     !**/*.tmp,       !**/*.aac,      !**/*.aif,      !**/*.iff,     !**/*.m3u, !**/*.mid, !**/*.mp3,
 !**/*.mpa,     !**/*.ra,        !**/*.wav,      !**/*.wma,      !**/*.3g2,     !**/*.3gp, !**/*.asf, !**/*.asx,
@@ -51,7 +51,7 @@ node {
 !**/*.tar.gz,  !**/*.tar,       !**/*.gz,       !**/*.ahtm,     !**/*.ahtml,   !**/*.fhtml, !**/*.hdm,
 !**/*.hdml,    !**/*.hsql,      !**/*.ht,       !**/*.hta,      !**/*.htc,     !**/*.htd, !**/*.war, !**/*.ear,
 !**/*.htmls,   !**/*.ihtml,     !**/*.mht,      !**/*.mhtm,     !**/*.mhtml,   !**/*.ssi, !**/*.stm,
-!**/*.stml,    !**/*.ttml,      !**/*.txn,      !**/*.xhtm,     !**/*.xhtml,   !**/*.class, !**/*.iml, !Checkmarx/Reports/*.*''', fullScanCycle: 10, groupId: '1', includeOpenSourceFolders: '', osaArchiveIncludePatterns: '*.zip, *.war, *.ear, *.tgz', osaEnabled: true, osaInstallBeforeScan: false, password: '{AQAAABAAAAAQQeNyFuWdW7Jev+XGlSwT3aq0vlP+40JcJz3I6qT6sMs=}', preset: '36', projectName: 'DemoPipeline', sastEnabled: false, serverUrl: 'http://localhost', sourceEncoding: '1', username: '', vulnerabilityThresholdResult: 'FAILURE', waitForResultsEnabled: true])
+!**/*.stml,    !**/*.ttml,      !**/*.txn,      !**/*.xhtm,     !**/*.xhtml,   !**/*.class, !**/*.iml, !Checkmarx/Reports/*.*''', fullScanCycle: 10, groupId: '1', password: '{AQAAABAAAAAQCqfCvlLaDlgfV8RBmv9c/wd/qg/JV78/jMyZPxTIG8Y=}', preset: '36', projectName: 'CxPipelineWebGoat', sastEnabled: false, serverUrl: 'http://localhost', sourceEncoding: '1', username: '', vulnerabilityThresholdResult: 'FAILURE', waitForResultsEnabled: true])
 				}
 			}
 			failFast: false
