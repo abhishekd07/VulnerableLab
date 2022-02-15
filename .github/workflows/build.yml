@@ -34,3 +34,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=abhishekd07_VulnerableLab
+      - name: run kics Scan
+        uses: checkmarx/kics-action@v1.4
+        with:
+          path: .
+          ignore_on_exit: results
+          output_path: myResults/
+      - name: display kics results
+        run:  cat myResults/results.json
