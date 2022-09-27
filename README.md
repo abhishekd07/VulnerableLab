@@ -1,5 +1,9 @@
 This is a "Vulnerable" Web Application developed by Cyber Security and Privacy Foundation(www.cysecurity.org). This app is intended for the Java Programmers and other people who wish to learn about Web application vulnerabilities and write secure code. Test Abhishek Webhook ewerw test
 
+codeql database analyze ../codeql_db/indirect-webgoat ../codeql/java/ql/src/codeql-suites/java-security-and-quality.qls --format=csv --output=java_results.csv
+
+
+
 **The full course content is now available on Github for free:** 
 
 https://github.com/CSPF-Founder/JavaSecurityCourse
